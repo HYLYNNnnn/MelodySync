@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MelodySync</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_favorite">Favorites</string>
+    <string name="album_info">%1$s · %2$s</string>
+    <string name="screen_loading">Loading music…</string>
+    <string name="retry">Retry</string>
+    <string name="empty_feed">No albums are available yet.</string>
+    <string name="empty_favorites">Your favorite albums will appear here.</string>
+    <string name="empty_playlist">This album has no songs yet.</string>
+    <string name="favorite_album">Add album to favorites</string>
+    <string name="unfavorite_album">Remove album from favorites</string>
+</resources>
