@@ -2,6 +2,10 @@
 
 An Android music application built with Kotlin, Jetpack Compose, Navigation, Hilt, Retrofit, Room and Media3 ExoPlayer, with a Kotlin/Ktor music service.
 
+<p align="center">
+  <img src="docs/images/demo-home.png" alt="MelodySync Android home feed with album artwork and navigation" width="280" />
+</p>
+
 ## Demo
 
 [Watch the MelodySync demo](https://drive.google.com/file/d/1MTr7gNUSFAoPLRzU3hx1GziUvovPmoKs/view?usp=sharing)
