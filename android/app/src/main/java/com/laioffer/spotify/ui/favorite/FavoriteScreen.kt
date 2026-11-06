@@ -20,6 +20,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import com.laioffer.spotify.ui.artwork.artworkModel
 import com.laioffer.spotify.R
 import com.laioffer.spotify.datamodel.Album
 
@@ -75,7 +76,7 @@ private fun FavoriteAlbumRow(album: Album, onTap: (Album) -> Unit) {
         verticalAlignment = Alignment.CenterVertically
     ) {
         AsyncImage(
-            model = album.cover,
+            model = album.artworkModel(),
                 placeholder = painterResource(R.drawable.album_placeholder),
                 error = painterResource(R.drawable.album_placeholder),
             contentDescription = null,
@@ -83,7 +84,7 @@ private fun FavoriteAlbumRow(album: Album, onTap: (Album) -> Unit) {
                 .width(60.dp)
                 .aspectRatio(1.0f)
                 .clip(RoundedCornerShape(8.dp)),
-            contentScale = ContentScale.FillBounds
+            contentScale = ContentScale.Crop
         )
         Column(
             modifier = Modifier

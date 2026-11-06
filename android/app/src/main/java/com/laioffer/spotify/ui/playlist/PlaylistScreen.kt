@@ -27,6 +27,7 @@ import com.laioffer.spotify.R
 import com.laioffer.spotify.datamodel.Album
 import com.laioffer.spotify.datamodel.Song
 import com.laioffer.spotify.player.PlayerViewModel
+import com.laioffer.spotify.ui.artwork.artworkModel
 
 @Composable
 fun PlaylistScreen(playlistViewModel: PlaylistViewModel, playerViewModel: PlayerViewModel) {
@@ -90,7 +91,7 @@ private fun AlbumCover(album: Album, favorite: Boolean, saving: Boolean, onFavor
         }
         Box(Modifier.align(Alignment.Center).widthIn(max = 240.dp).fillMaxWidth(0.7f).aspectRatio(1f)) {
             Image(painterResource(R.drawable.vinyl_background), contentDescription = null, modifier = Modifier.fillMaxSize())
-            AsyncImage(model = album.cover,
+            AsyncImage(model = album.artworkModel(),
                 placeholder = painterResource(R.drawable.album_placeholder),
                 error = painterResource(R.drawable.album_placeholder), contentDescription = null, contentScale = ContentScale.Crop,
                 modifier = Modifier.align(Alignment.Center).fillMaxWidth(0.6f).aspectRatio(1f).clip(CircleShape))

@@ -23,6 +23,7 @@ import coil.compose.AsyncImage
 import com.laioffer.spotify.R
 import com.laioffer.spotify.datamodel.Album
 import com.laioffer.spotify.datamodel.Section
+import com.laioffer.spotify.ui.artwork.artworkModel
 
 
 @Composable
@@ -96,12 +97,12 @@ private fun AlbumCover(album: Album, onTap: (Album) -> Unit) {
     Column(modifier = Modifier.clickable { onTap(album) }) {
         Box(modifier = Modifier.size(160.dp)) {
             AsyncImage(
-                model = album.cover,
+                model = album.artworkModel(),
                 placeholder = painterResource(R.drawable.album_placeholder),
                 error = painterResource(R.drawable.album_placeholder),
                 contentDescription = null,
                 modifier = Modifier.fillMaxSize(),
-                contentScale = ContentScale.FillBounds
+                contentScale = ContentScale.Crop
             )
             Text(
                 text = album.name,
@@ -138,7 +139,7 @@ private fun LoadingSection(text: String) {
 fun HomeScreenHeader() {
     Column {
         Text(
-            stringResource(id = R.string.menu_home),
+            stringResource(id = R.string.app_name),
             style = MaterialTheme.typography.h4,
             color = Color.White
         )

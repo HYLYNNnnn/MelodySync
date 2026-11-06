@@ -1,0 +1,100 @@
+[
+  {
+    "album_id": 1,
+    "album": "Hexagonal",
+    "file": "android/app/src/main/res/drawable-nodpi/album_hexagonal.jpg",
+    "source_page": "https://www.shazam.com/song/339950183/cant-breakup-girl-cant-breakaway-boy-feat-jung-in",
+    "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/76/a4/c9/76a4c9fb-8099-831d-b2f9-9ee2a43e0911/mzi.soiolgnj.jpg/1200x1200bb.jpg",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "bytes": 448645,
+    "sha256": "e6e202e6309e502b4bad68b0255956c97fc7e714b399ffa96264cebf64fbf512",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "album_id": 2,
+    "album": "Still Fantasy",
+    "file": "android/app/src/main/res/drawable-nodpi/album_still_fantasy.jpg",
+    "source_page": "https://music.apple.com/us/album/%E4%BE%9D%E7%84%B6%E8%8C%83%E7%89%B9%E8%A5%BF/1721453996",
+    "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6b/05/16/6b051613-864c-b2b4-af7a-1fade330fa7c/23UM1IM58372.rgb.jpg/296x296bb-60.jpg",
+    "dimensions": [
+      296,
+      296
+    ],
+    "bytes": 20647,
+    "sha256": "686511a2d86fd10f9c62579d017d12f358086862471eecd6cc9d00433b06002e",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "album_id": 3,
+    "album": "Dangerous",
+    "file": "android/app/src/main/res/drawable-nodpi/album_dangerous.jpg",
+    "source_page": "https://www.michaeljackson.com/albums/dangerous/",
+    "image_url": "https://cdn-p.smehost.net/sites/b216384857054ba4a3f60f1ed1d26488/wp-content/uploads/2025/10/album-cover_dangerous.jpg",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "bytes": 348291,
+    "sha256": "bc87d557a1308708a57cdb980d929660d1299bae64b7ff5cb54caee3178a2e6a",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "album_id": 4,
+    "album": "Kite",
+    "file": "android/app/src/main/res/drawable-nodpi/album_kite.jpg",
+    "source_page": "https://music.apple.com/tw/album/%E9%A2%A8%E7%AE%8F/297994281",
+    "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/e7/26/7be7268a-8048-fe91-9f70-e6f0ef401372/mzi.uwhxxsbl.jpg/296x296bb-60.jpg",
+    "dimensions": [
+      260,
+      296
+    ],
+    "bytes": 12875,
+    "sha256": "a66ecbe3a51dda9685b68dd22b487c6e1f6fc4cb709917bfb0de0439fd1d6bf7",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "album_id": 5,
+    "album": "No. 89757",
+    "file": "android/app/src/main/res/drawable-nodpi/album_no_89757.jpg",
+    "source_page": "https://open.spotify.com/album/5OetT1AzRblq9NstfYM4Xv",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273b78dcbf5167a0cf369b6514f",
+    "dimensions": [
+      640,
+      640
+    ],
+    "bytes": 88870,
+    "sha256": "959da267b9d70d5dcbcd8bdbee7743cb08fe8de0d869daf021e071beb8e6787b",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "album_id": 6,
+    "album": "Nxde (Steve Aoki Remix)",
+    "file": "android/app/src/main/res/drawable-nodpi/album_nxde_remix.jpg",
+    "source_page": "https://music.apple.com/cn/album/nxde-steve-aoki-remix-single/1717114048",
+    "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/20/16/bc/2016bc2e-969e-d3b8-87a8-6d5825046ef3/6923356185068.jpg/1200x1200bf-60.jpg",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "bytes": 289590,
+    "sha256": "87ae893d90c3fc63a33061619024b6c14b9dcf63110d03a821696601a170a61a",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "album_id": 7,
+    "album": "BLACKPINK IN YOUR AREA",
+    "file": "android/app/src/main/res/drawable-nodpi/album_blackpink_in_your_area.jpg",
+    "source_page": "https://ygex.jp/blackpink/discography/detail.php?id=1016135",
+    "image_url": "https://img.imageimg.net/artist/blackpink/img/product_1028809.jpg",
+    "dimensions": [
+      800,
+      800
+    ],
+    "bytes": 244567,
+    "sha256": "5460e98710c12b33a884d86db05f9ec0094ed180ef830d97b14969f44cdafe6d",
+    "retrieved": "2026-11-05"
+  }
+]

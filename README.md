@@ -2,13 +2,17 @@
 
 An Android music application built with Kotlin, Jetpack Compose, Navigation, Hilt, Retrofit, Room and Media3 ExoPlayer, with a Kotlin/Ktor music service.
 
+## Demo
+
+[Watch the MelodySync demo](https://drive.google.com/file/d/1MTr7gNUSFAoPLRzU3hx1GziUvovPmoKs/view?usp=sharing)
+
 ## Features
 
 - Browse the home feed and open an album's track list.
 - Add/remove favorite albums and keep them in a local Room database across app restarts.
 - Play tracks through an Activity-shared mini player, pause/resume, switch songs and retry failures.
 - Keep the player while navigating between pages or rotating the screen. Playback pauses when the app leaves the foreground.
-- Loading, empty and failure states with retry controls; local artwork when a remote cover cannot load.
+- Bundled artwork for all seven catalog albums across the home feed, playlists and saved favorites; loading, empty and failure states with retry controls.
 - Typed JSON APIs, validated catalog resources and audio HEAD/byte-range responses.
 
 ## Repository layout
@@ -74,9 +78,9 @@ Install that debug APK on the phone. The default emulator address is not a physi
 
 ## Validation and scope
 
-The repair includes 22 Android unit/Robolectric tests covering player behavior, network contracts, state races, Room close/reopen persistence and production Hilt Activity/navigation startup. The backend has 11 tests for catalog integrity, JSON, errors and audio ranges. Android debug compilation and lint are part of verification; lint has no errors, with development/resource warnings documented in the repair notes.
+The repair includes 24 Android unit/Robolectric tests covering player behavior, network contracts, state races, Room close/reopen persistence, production Hilt Activity/navigation startup and returning from album details using the bottom tabs. The backend has 11 tests for catalog integrity, JSON, errors and audio ranges. Android debug compilation and lint are part of verification; lint has no errors, with development/resource warnings documented in the repair notes.
 
-Playback is foreground-only. Background services, notification/lock-screen controls, account login, automatic next-track queues and offline audio downloads are outside this implementation. Covers still use the original remote URLs, with local placeholders if unavailable. Catalog durations are display metadata; audio bytes are streamed from the bundled resources.
+Playback is foreground-only. Background services, notification/lock-screen controls, account login, automatic next-track queues and offline audio downloads are outside this implementation. The Android app bundles artwork for the seven catalog albums, so these covers load without contacting an external image host. Previously saved favorites use the same bundled covers without a database migration. Unknown future albums can still use their supplied cover URLs, with a placeholder on failure. See [artwork sources and asset details](docs/ARTWORK.md). Catalog durations are display metadata; audio bytes are streamed from the bundled resources.
 
 Observed Android 15 emulator checks include real audio processing, pause, shared playback, rotation and favorites surviving a process restart. Screenshots: [Home](docs/images/home.png), [Playlist/player](docs/images/playlist-playing.png).
 
